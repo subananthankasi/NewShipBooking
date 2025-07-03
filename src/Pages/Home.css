@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero-img {
+  position: relative;
+  /* Corrected typo */
+}
+
+.img1 {
+  height: 413px !important;
+  border-radius: 340px;
+  width: 318px;
+  border: 15px solid white;
+}
+
+.img2 {
+  height: 296px !important;
+  width: 227px;
+  border-radius: 340px;
+  border: 15px solid white;
+  position: absolute;
+  top: 100px;
+  left: 280px;
+  z-index: 1;
+}
+
+.hero-subtitle {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  color: #ff681a;
+}
+
+.hero-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btn-read {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #ff681a;
+  text-decoration: none;
+  border: 3px solid #ff681a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+/* Default (Desktop) - Already present styles, keep as is */
+
+@media (max-width: 991px) {
+  .img1 {
+    height: 300px;
+    width: 240px;
+  }
+
+  .img2 {
+    height: 200px;
+    width: 180px;
+    top: 70px;
+    left: 220px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 24px;
+  }
+
+  .btn-read {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-layout {
+    height: auto !important;
+    padding-bottom: 40px;
+  }
+
+  .hero-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .img1 {
+    height: 250px;
+    width: 250px;
+    position: relative;
+  }
+
+  .img2 {
+    height: 150px;
+    width: 180px;
+    position: absolute;
+    top: 170px;
+    left: auto;
+    right: -10px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hero-subtitle,
+  .hero-text,
+  .btn-read {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}

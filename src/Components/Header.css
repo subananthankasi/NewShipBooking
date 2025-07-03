@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+.menu-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #333;
+  cursor: pointer;
+}
+
+.mobile-menu-container {
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  background: #fff;
+}
+
+.mobile-menu-container.open {
+  max-height: 600px;
+  /* adjust based on content */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mobile-menu {
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 12px;
+}
+
+.mobile-menu ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header1 {
+
+  background: #000428;
+  background: linear-gradient(to right,
+      #000428, #004e92);
+}
+
+.header2 {
+  /* background: #72C6EF;
+  background: linear-gradient(
+    to right,
+    #0c97dd,#004E8F
+  ); */
+  background-color: white;
+}
+
+.header-social a {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #000;
+}
+
+.header-contact li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.header-contact li a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 5px;
+}
+
+.header-mail {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.header-call {
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  color: #ff681a;
+  transition: color 0.3s ease;
+}
+
+.header-call:hover {
+  background-color: #ff681a;
+}
+
+.header-call:hover .header-icon {
+  color: white;
+}
+
+.header-mail:hover {
+  color: #ff681a;
+}
+
+.facebook_icon {
+  color: white;
+}
+
+.facebook_icon :hover {
+  color: #ff681a;
+  cursor: pointer;
+}
+
+.insta_icon {
+  color: white;
+}
+
+.insta_icon :hover {
+  color: #ff681a;
+  cursor: pointer;
+
+}
+
+.whatsapp_icon {
+  color: white;
+}
+
+.whatsapp_icon :hover {
+  color: #ff681a;
+  cursor: pointer;
+
+}
+
+.twitter_icon {
+  color: white;
+}
+
+.twitter_icon :hover {
+  color: #ff681a;
+  cursor: pointer;
+
+}
+
+.menu-item {
+  text-decoration: none;
+  font-family: "Michroma", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #172a88;
+  font-size: 13px;
+}

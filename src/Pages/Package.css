@@ -1,0 +1,96 @@
+.card_image{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+
+}
+.header_title {
+    position: relative;
+    background-color: white;
+    color: #003670;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   
+}
+
+.grid_bottom {
+    position: relative;
+    background-color: white;
+    top:250px ;
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 270px;
+    height: 85px;
+}
+
+.booking_btn {
+    border: 1px solid #172a88;
+    background-color: white;
+    color: #172a88;
+    padding: 3px 5px;
+    border-radius: 20px 20px;
+    transition: background-color 0.2s ease-in-out;
+    font-weight: 700;
+}
+
+.booking_btn:hover {
+    background-color: #172a88;
+    color: white;
+}
+
+.grid {
+    cursor: pointer;
+}
+
+.grid:hover .header_title {
+    background-color: #ff681a;
+    /* background-color: #004b8e; */
+    color: white;
+}
+.grid:hover .grid_bottom {
+    background-color: #ff681a;
+    color: white;
+}
+
+.grid_bottom {
+    transition: background-color 0.3s ease;
+}
+
+/* Set thumbnail height */
+.carousel .thumb {
+  height: 80px;
+  object-fit: cover;
+}
+
+/* Optional: make all thumbs consistent */
+.carousel .thumb img {
+  height: 100% !important;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Optional: styling for selected thumb */
+/* .carousel .thumb.selected {
+  border: 2px solid orange;
+} */
+/* Change the scroll button (arrow) background to orange */
+/* .carousel .control-arrow.control-prev,
+.carousel .control-arrow.control-next {
+  background-color: #ff681a;
+  color: black;
+  opacity: 1;
+} */
+
+/* Optional: make the arrow icon inside white for contrast */
+/* .carousel .control-arrow::before {
+  border-top: 8px solid white;
+  border-right: 8px solid white;
+} */
+
+/* Optional: hide hover fade */
+.carousel .control-arrow:hover {
+  background-color: #ff681a;
+  opacity: 1;
+}

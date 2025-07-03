@@ -1,23 +1,32 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Header from './Components/Header';
+import Home from './Pages/Home';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+// import "primereact/resources/themes/lara-light-cyan/theme.css";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import Navbar from './Components/Navbar/Navbar';
+// import HomePage from './Pages/Home/HomePage';
+// import Footer from './Components/Footer/Footer';
+// import ContactForm from './Pages/ContactForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* check */}
+      <BrowserRouter>
+      <Header/>
+      <Routes>
+          <Route path="/" element={<Home/>} />
+          {/* <Route path="/" element={<Footer/>} /> */}
+          {/* <Route path="/contact" element={<ContactForm/>} /> */}
+          {/* <Route path="/about" element={<div>About Page</div>} /> */}
+          {/* <Route path="/services" element={<div>Services Page</div>} /> */}
+          {/* <Route path="/contact" element={<div>Contact Us Page</div>} /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
