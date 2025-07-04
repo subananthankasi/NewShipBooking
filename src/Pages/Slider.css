@@ -1,80 +1,41 @@
-/* Gallery Styles */
-.gallery-style1 {
-  padding: 80px 0;
+.carousel-item {
+  position: relative;
+  padding: 0 0.5rem;
 }
-
-.sec-subtitle {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: #888;
-  display: block;
-  margin-bottom: 10px;
+.carousel-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
 }
-
-.sec-title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  color: #333;
+.carousel-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.25rem;
+  opacity: 0;
+  border-radius: 14px;
+  transition: opacity .35s ease;
+  padding: 0 1rem;
 }
-
-.sec-text {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 30px;
+.carousel-item:hover .carousel-overlay {
+  opacity: 1;
 }
-
-.gallery-image-container {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+.carousel-overlay h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: .5px;
 }
-
-.gallery-image-container:hover {
-  transform: scale(1.02);
+.carousel-overlay p {
+  margin: 0;
+  font-size: .85rem;
 }
-
-.gallery-video {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.gallery-btn {
-  z-index: 2;
-}
-
-.play-btn {
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.play-btn:hover {
-  transform: scale(1.1);
-  background-color: #f8f9fa !important;
-}
-
-/* Responsive adjustments */
-@media (max-width: 1199.98px) {
-  .sec-title {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .gallery-style1 {
-    padding: 60px 0;
-  }
-  
-  .sec-title {
-    font-size: 30px;
-  }
-  
-  .col-xl-6:first-child {
-    margin-bottom: 30px;
-  }
-}
-
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&display=swap');

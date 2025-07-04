@@ -7,6 +7,8 @@ import BlogPages from "./BlogPages";
 import Packages from "./Packages";
 import OfferPanner from "./OfferPanner";
 import VideoPage from "./VideoPage";
+import SliderePage from "./SliderePage";
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <>
@@ -60,6 +62,8 @@ const Home = () => {
       <Packages />
       <OfferPanner/>
       <VideoPage/>
+      <SliderePage/>
+      <Footer/>
       {/* <GridPage/>
       <Footer/> */}
     </>
