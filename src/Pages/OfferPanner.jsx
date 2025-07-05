@@ -22,10 +22,10 @@ const OfferPanner = () => {
               <span className="sec-subtitle " style={{color:"white"}}>Go & Discover</span>
               <h2 className="sec-title h1" style={{color:"white"}}>Get Special Offer</h2>
               <p className="sec-text" style={{color:"white"}}>
-                Curabitur aliquet quam id dui posuere blandit. Vivamus magna
-                justo, lacinia eget consectetur sed, convallis at tellus.
+               Uncover unforgettable moments on Dubai’s dazzling waters.
+Book today and enjoy exclusive yacht rental deals!.
               </p>
-              <a href="contact.html" className="vs-btn style-orange">
+              <a href="#" className="vs-btn style-orange">
                 View More
               </a>
             </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-// import logo from "../../../src/Assets/logo.png";
 import logo from "../../src/Assets/logo.png";
+import titan from "../Assets/TITAN (1).png"
 import { Link } from "react-router-dom";
 import "./Header.css"
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -11,10 +11,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-// import facebook from "../../../src/Assets/facebook-svgrepo-com.svg";
-// import Instagram from "../../../src/Assets/instagram-1-svgrepo-com.svg";
-// import whatsapp from "../../../src/Assets/whatsapp-icon-logo-svgrepo-com.svg";
-// import twiter from "../../../src/Assets/twitter-svgrepo-com.svg";
+
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -101,7 +98,7 @@ const Header = () => {
             <div className="vs-logo">
               <Link to="/">
                 <img
-                  src={logo}
+                  src={titan}
                   alt="logo"
                   style={{ width: "100px", height: "80px" }}
                 />

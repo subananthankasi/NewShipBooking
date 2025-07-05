@@ -18,10 +18,10 @@ const VideoPage = () => {
                 <span className="sec-subtitle text-uppercase">
                   Go & Discover
                 </span>
-                <h2 className="sec-title h1">Breathtaking Cities</h2>
+                <h2 className="sec-title h1">Breathtaking Sea</h2>
                 <p className="sec-text mb-4">
-                  Curabitur aliquet quam id dui posuere blandit. Vivamus magna
-                  justo, lacinia eget consectetur sed, convallis at tellus.
+                Where the sea meets the sky, your private escape awaits.
+Book a luxury yacht and make memories that sail forever.
                 </p>
               </div>
               <div className="row gx-3">

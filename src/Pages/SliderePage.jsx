@@ -176,6 +176,7 @@ const SliderePage = () => {
       itemTemplate={productTemplate}
       autoplayInterval={5000}
       circular
+      className="carousel"
     />
     </div> 
   );
