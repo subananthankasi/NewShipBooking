@@ -3,8 +3,10 @@ import newsLetter from "../Assets/Img/newsletter.png";
 import "./Footer.css";
 import backimg from "../Assets/Img/bg/footer-bg.jpg";
 import logo from "../Assets/TITAN C (3).png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <footer
@@ -93,7 +95,7 @@ const Footer = () => {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="#" onClick={()=>navigate("/about")}>
                           <i className="fas fa-angle-right"></i> About us
                         </a>
                       </li>

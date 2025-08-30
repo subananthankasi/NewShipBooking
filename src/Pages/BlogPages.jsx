@@ -10,10 +10,9 @@ const BlogPages = () => {
   return (
     <div className="space-top space-extra-bottom blog-wrapper1 shape-mockup-wrap">
       <div
-        className="shape-mockup d-none d-xl-block spin z-index-negative"
+        className="shape-mockup  d-xl-block spin z-index-negative"
         data-top="-5%"
         data-left="-5%"
-        // style={{top:"-5px",left:"-5px"}}
         style={{ marginTop: "-170px", left: "-70px" }}
       >
         <img src={circle} alt="circle" />

@@ -19,7 +19,6 @@
 
 .mobile-menu-container.open {
   max-height: 600px;
-  /* adjust based on content */
   opacity: 1;
   transform: translateY(0);
 }
@@ -40,7 +39,7 @@
 }
 
 .mobile-menu ul li a {
-  color: #000;
+  color: white;
   text-decoration: none;
   font-size: 18px;
 }
@@ -53,11 +52,6 @@
 }
 
 .header2 {
-  /* background: #72C6EF;
-  background: linear-gradient(
-    to right,
-    #0c97dd,#004E8F
-  ); */
   background-color: white;
 }
 
@@ -169,3 +163,79 @@
   color: #172a88;
   font-size: 13px;
 }
+/*...........................*/
+.header2 {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.menu-item {
+  background: linear-gradient(to right, #0f2027, #2c5364);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.menu-item:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff681a, #f12711);
+  -webkit-background-clip: text;
+}
+/* .menu-item.active {
+  font-weight: 600;
+  background: linear-gradient(to right, #ff681a, #f12711);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+  border-bottom: 2px solid #f12711;
+} */
+.facebook_icon:hover,
+.insta_icon:hover,
+.whatsapp_icon:hover,
+.twitter_icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #ff681a;
+}
+.menu-item {
+  position: relative;
+}
+.menu-item::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff681a;
+  transition: width 0.3s ease;
+}
+.menu-item:hover::after {
+  width: 100%;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.mobile-menu-container.open {
+  animation: slideFadeIn 0.5s ease-in-out;
+}
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.mobile-menu-container.open {
+    background: linear-gradient(to right, #0f2027, #2c5364);
+  backdrop-filter: blur(6px);
+  color: white;
+}
+/*.......................*/

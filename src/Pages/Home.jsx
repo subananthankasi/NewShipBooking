@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import homepagepic from "../Assets/4d.jpg";
 import homepagepic1 from "../Assets/HomePic1.jpg";
 import banner from "../Assets/banner-bg-1.png";
@@ -9,7 +9,13 @@ import OfferPanner from "./OfferPanner";
 import VideoPage from "./VideoPage";
 import SliderePage from "./SliderePage";
 import Footer from "../Components/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Home = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <>
       <section
@@ -29,10 +35,10 @@ const Home = () => {
             autoplay="false"
           >
             <div className="">
-              <div className="container" style={{paddingTop:"80px"}}>
+              <div className="container" style={{ paddingTop: "80px" }}>
                 <div className="row align-items-center justify-content-between">
                   <div className="col-lg-6">
-                    <div className="hero-content">
+                    <div className="hero-content" data-aos="fade-right">
                       <span className="hero-subtitle">Let's Go Now</span>
                       <h1 className="hero-title">
                         Explore Sea And Find The Beauty
@@ -52,6 +58,15 @@ const Home = () => {
                       <img className="img2" src={homepagepic1} alt="hero" />
                     </div>
                   </div>
+                  <div className="wave-divider">
+                    <svg viewBox="0 0 1440 320">
+                      <path
+                        fill="#fff"
+                        fillOpacity="1"
+                        d="M0,224L48,208C96,...Z"
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -60,10 +75,10 @@ const Home = () => {
       </section>
       <BlogPages />
       <Packages />
-      <OfferPanner/>
-      <VideoPage/>
-      <SliderePage/>
-      <Footer/>
+      <OfferPanner />
+      <VideoPage />
+      <SliderePage />
+      <Footer />
       {/* <GridPage/>
       <Footer/> */}
     </>

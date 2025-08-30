@@ -1,0 +1,56 @@
+.about-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+              url('/src/Assets/GridImg/Gulfcraft/Gulfcraft12.jpeg') center/cover no-repeat;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.section-title {
+  color: #2c3e50;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: #3498db;
+}
+
+.feature-icon {
+  color: #3498db;
+}
+
+.team-card {
+  transition: transform 0.3s;
+  border: none;
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  transition: transform 0.5s;
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.testimonial p {
+  font-style: italic;
+}

@@ -1,10 +1,7 @@
 import React from "react";
 import "./VideoPage.css";
-import firstpic from "../Assets/Img/gallery/gallery-1-1.jpg";
-import secondpic from "../Assets/Img/gallery/gallery-1-3.jpg";
 import demovidoe_1 from "../Assets/Videos/demovideo_1.mp4";
 import demovidoe_2 from "../Assets/Videos/demovideo_2.mp4";
-import demovidoe_3 from "../Assets/Videos/demovideo_3.mp4";
 import demovidoe_4 from "../Assets/Videos/demovideo_4.mp4";
 
 const VideoPage = () => {

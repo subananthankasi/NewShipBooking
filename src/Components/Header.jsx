@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import logo from "../../src/Assets/logo.png";
 import titan from "../Assets/TITAN (1).png"
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Header.css"
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -12,9 +12,23 @@ import CallIcon from "@mui/icons-material/Call";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-
+//check
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  useEffect(() => {
+  const handleScroll = () => {
+    const header = document.querySelector(".header2");
+    if (window.scrollY > 10) {
+      header.classList.add("sticky-header");
+    } else {
+      header.classList.remove("sticky-header");
+    }
+  };
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
 
   return (
     <header className="">
@@ -109,28 +123,28 @@ const Header = () => {
           <div className="col text-end text-xl-center d-none d-lg-block">
             <nav className="main-menu menu-style1">
               <div className="d-flex justify-content-center align-items-center gap-4">
-                <Link to="#" className="menu-item">
+                <NavLink to="/" className="menu-item">
                   Home
-                </Link>
+                </NavLink>
 
-                <Link to="/" className="menu-item">
+                <NavLink to="/" className="menu-item">
                   Yacht Rental
-                </Link>
-                <Link to="/" className="menu-item">
+                </NavLink>
+                <NavLink to="/" className="menu-item">
                   Yacht Booking
-                </Link>
-                <Link to="/" className="menu-item">
+                </NavLink>
+                <NavLink to="/" className="menu-item">
                   Luxury Yachts
-                </Link>
-                <Link to="/" className="menu-item">
+                </NavLink>
+                <NavLink to="/" className="menu-item">
                   Standard Yachts
-                </Link>
-                <Link to="#" className="menu-item">
+                </NavLink>
+                <NavLink to="/about" className="menu-item">
                   About Us
-                </Link>
-                <Link to="/" className="menu-item">
+                </NavLink>
+                <NavLink to="/contact" className="menu-item">
                   Contact
-                </Link>
+                </NavLink>
               </div>
             </nav>
           </div>
@@ -180,12 +194,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <Link to="/about" onClick={() => setMenuOpen(false)}>
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/" onClick={() => setMenuOpen(false)}>
+              <Link to="/contact" onClick={() => setMenuOpen(false)}>
                 Contact Us
               </Link>
             </li>

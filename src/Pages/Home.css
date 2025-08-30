@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap');
 
 .hero-img {
   position: relative;
@@ -130,3 +131,100 @@
     text-align: center;
   }
 }
+/*..............................*/
+.img1,
+.img2 {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.img1:hover,
+.img2:hover {
+  transform: scale(1.03);
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+}
+.btn-read {
+  border: 2px solid #ff681a;
+  color: white;
+  background: linear-gradient(to right, #ff681a, #f12711);
+  box-shadow: 0 8px 20px rgba(255, 104, 26, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+.btn-read:hover {
+  background: white;
+  color: #ff681a;
+  box-shadow: 0 0 15px rgba(255, 104, 26, 0.5);
+}
+@media (max-width: 767px) {
+  .hero-layout {
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .img2 {
+    position: relative;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+.hero-layout {
+  animation: bgMove 20s ease-in-out infinite;
+}
+@keyframes bgMove {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center center;
+  }
+  100% {
+    background-position: center top;
+  }
+}
+.hero-title {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.hero-subtitle {
+  animation: flicker 2s infinite;
+}
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+.hero-layout {
+  /* background-attachment: fixed; */
+}
+.section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  color: #172a88;
+  position: relative;
+  padding-bottom: 10px;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ff681a;
+  display: block;
+  margin: 10px auto;
+}
+.wave-divider {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: -60px;
+  z-index: 2;
+}
+
+

@@ -31,7 +31,7 @@ const galleries = {
     require.context("../Assets/GridImg/Riviera", false, /\.(jpe?g|png)$/)
   ),
 };
-console.log("Gulfcraft",galleries)
+console.log("Gulfcraft", galleries);
 /* grid cards */
 const cards = [
   {
@@ -78,7 +78,6 @@ const cards = [
   },
 ];
 
-
 export default function Packages() {
   const [selected, setSelected] = useState(null);
 
@@ -103,28 +102,29 @@ export default function Packages() {
             >
               <div className="card p-0 mb-5">
                 <img src={img} className="card_image" alt={head} />
-               
-                  <div className="d-flex justify-content-center">
+
+                <div className="d-flex justify-content-center">
                   <h6 className="px-3 py-2 header_title">
                     <b>{head} </b>{" "}
                   </h6>
                 </div>
-              
 
                 <div className="px-3 py-2 grid_bottom">
                   <p>
                     Length : {length} &nbsp;|&nbsp; Capacity : {capacity}
                   </p>
-                  <span>Price : {price} /hr</span>
-                  <button
-                    className="booking_btn ms-2"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      window.open("https://wa.me/971525644209", "_blank");
-                    }}
-                  >
-                    Book&nbsp;Now
-                  </button>
+                  {/* <span>Price : {price} /hr</span> */}
+                  <div className="d-flex justify-content-center">
+                    <button
+                      className="booking_btn text-center ms-2"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        window.open("https://wa.me/971525644209", "_blank");
+                      }}
+                    >
+                      Book&nbsp;Now
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>

@@ -12,31 +12,42 @@ const OfferPanner = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         width: "100%",
-        height: "406px",
+        // height: "406px",
+        height: "auto",
       }}
     >
       <div className="container text-align-center">
         <div className="row align-items-center justify-content-between p-5">
-          <div className="col-12 col-md-6 col-lg-6 col-xl-5 col-xxl-5">
-            <div className="title-area white-title mb-md-0">
-              <span className="sec-subtitle " style={{color:"white"}}>Go & Discover</span>
-              <h2 className="sec-title h1" style={{color:"white"}}>Get Special Offer</h2>
-              <p className="sec-text" style={{color:"white"}}>
-               Uncover unforgettable moments on Dubai’s dazzling waters.
-Book today and enjoy exclusive yacht rental deals!.
+          {/* Text Column */}
+          <div className="col-12 col-md-6 mb-4 mb-md-0">
+            <div className="title-area white-title">
+              <span className="sec-subtitle" style={{ color: "white" }}>
+                Go & Discover
+              </span>
+              <h2 className="sec-title h1" style={{ color: "white" }}>
+                Get Special Offer
+              </h2>
+              <p className="sec-text" style={{ color: "white" }}>
+                Enjoy unlimited soft drinks, bottled water, ice cubes, and
+                top-notch music systems. Equipped with fishing rods for your
+                leisure, our yachts offer more than just a ride—uncover
+                unforgettable moments on Dubai’s stunning waters. Book now to
+                unlock exclusive deals and create memories that last a lifetime!
               </p>
               <a href="#" className="vs-btn style-orange">
                 View More
               </a>
             </div>
           </div>
-          <div className="col-12 d-none d-lg-block col-md-6 col-lg-6 col-xl-5 col-xxl-5 text-align-center">
+
+          {/* Image Column */}
+          <div className="col-12 col-md-6 text-center">
             <div className="img-box1">
               <img
-                className="img-1-1"
+                className="img-1-1 img-fluid"
                 src={offer}
-                alt="Offer image"
-                style={{ width: "493", height: "280px" }}
+                alt="Offer"
+                style={{ maxWidth: "100%", height: "auto" }}
               />
             </div>
           </div>

@@ -6,7 +6,8 @@
 }
 .header_title {
     position: relative;
-    background-color: white;
+    /* background-color: white; */
+     background: rgba(255, 255, 255, 0.6);
     color: #003670;
     padding: 10px;
     border-bottom-left-radius: 10px;
@@ -30,7 +31,7 @@
     background-color: white;
     color: #172a88;
     padding: 3px 5px;
-    border-radius: 20px 20px;
+    border-radius: 5px;
     transition: background-color 0.2s ease-in-out;
     font-weight: 700;
 }
@@ -45,9 +46,10 @@
 }
 
 .grid:hover .header_title {
-    background-color: #ff681a;
-    /* background-color: #004b8e; */
-    color: white;
+    /* background-color: #ff681a; */
+    background: rgba(255, 255, 255, 0.6);
+    /* color: white; */
+    color: #003670;
 }
 .grid:hover .grid_bottom {
     background-color: #ff681a;
@@ -58,39 +60,231 @@
     transition: background-color 0.3s ease;
 }
 
-/* Set thumbnail height */
+
 .carousel .thumb {
   height: 80px;
   object-fit: cover;
 }
 
-/* Optional: make all thumbs consistent */
+
 .carousel .thumb img {
   height: 100% !important;
   object-fit: cover;
   border-radius: 4px;
 }
 
-/* Optional: styling for selected thumb */
-/* .carousel .thumb.selected {
-  border: 2px solid orange;
-} */
-/* Change the scroll button (arrow) background to orange */
-/* .carousel .control-arrow.control-prev,
-.carousel .control-arrow.control-next {
-  background-color: #ff681a;
-  color: black;
-  opacity: 1;
-} */
-
-/* Optional: make the arrow icon inside white for contrast */
-/* .carousel .control-arrow::before {
-  border-top: 8px solid white;
-  border-right: 8px solid white;
-} */
-
-/* Optional: hide hover fade */
 .carousel .control-arrow:hover {
   background-color: #ff681a;
   opacity: 1;
+}
+/* ..................................... */
+/* .card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.grid:hover .card {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+.card_image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.grid:hover .card_image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), #00000091);
+  z-index: 2;
+  border-radius: 20px 20px 0 0;
+}
+.header_title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  padding: 10px 14px;
+  border-top-right-radius: 10px;
+  font-weight: 700;
+  z-index: 3;
+  color: #172a88;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.grid:hover .header_title {
+  background-color: #ff681a;
+  color: white;
+}
+.grid_bottom {
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  color: #172a88;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+  transition: background 0.3s ease;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+}
+
+.grid:hover .grid_bottom {
+  background-color: #ff681a;
+  color: white;
+}
+.booking_btn {
+  background: linear-gradient(to right, #ff681a, #ff884a);
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 10px rgba(255, 104, 26, 0.3);
+  transition: all 0.3s ease;
+}
+
+.booking_btn:hover {
+  background: linear-gradient(to right, #172a88, #0a1a4f);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+.carousel .control-arrow:hover {
+  background-color: rgba(255, 104, 26, 0.9);
+  color: white;
+}
+
+.carousel .carousel-slider {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel .thumb {
+  height: 70px;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border 0.3s ease;
+}
+
+.carousel .thumb.selected {
+  border: 2px solid #ff681a;
+} */
+.card {
+  /* overflow: hidden; */
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid:hover .card {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card_image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.grid:hover .card_image {
+  transform: scale(1.05);
+}
+
+/* .card::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), #00000099);
+  top: 0;
+  left: 0;
+  z-index: 1;
+} */
+.grid_bottom {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  color: #172a88;
+  font-size: 14px;
+  font-weight: 500;
+}
+.grid:hover .grid_bottom {
+  /* background: linear-gradient(to right, #ff681a, #f12711); */
+  background: rgba(255, 255, 255, 0.6);
+  /* color: white; */
+  color: #172a88;
+}
+.booking_btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  /* background-color: #172a88; */
+  background-color: #0b8095;
+  color: white;
+  /* color: #172a88; */
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(23, 42, 136, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.booking_btn:hover {
+  /* background-color: #ff681a; */
+   background: linear-gradient(to right, #ff681a, #f12711);
+  color: white;
+  box-shadow: 0 0 15px rgba(255, 104, 26, 0.6);
+}
+.p-dialog .p-dialog-header {
+  /* background: #172a88; */
+  /* color: white; */
+  font-weight: bold;
+  border-bottom: 2px solid #ff681a;
+}
+
+.carousel .slide img {
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+.header_title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.grid {
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

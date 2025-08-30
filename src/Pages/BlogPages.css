@@ -308,3 +308,33 @@
         height: 300px;
     }
 }
+
+/* Existing shape mockup styles */
+.shape-mockup {
+    position: absolute;
+}
+
+/* Responsive adjustments for the circle */
+@media (max-width: 1200px) {
+    .shape-mockup.spin {
+        margin-top: -120px;
+        left: -50px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .shape-mockup.spin {
+        margin-top: -80px;
+        left: -30px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .shape-mockup.spin {
+        margin-top: -60px;
+        left: -20px;
+        width: 60px;
+    }
+}
