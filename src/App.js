@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import Contact from "./Pages/Contact/Contact";
 import Aboutus from "./Pages/AboutUS/Aboutus";
+import Iconfile from "./Iconfile";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<Aboutus />} />
+          <Route path="/icon" element={<Iconfile />} />
         </Routes>
       </BrowserRouter>
     </div>

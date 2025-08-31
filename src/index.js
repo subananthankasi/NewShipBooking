@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import 'rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/rsuite-no-reset.min.css';
+import 'rsuite/Button/styles/index.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
